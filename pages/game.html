@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo_game.png" alt="Logo do Site" title="Logo Jogo da Memória">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#"> HOME </a></li>
+            <li><a href="#"> LOCAL </a></li>
+            <li><a href="#"> CARDÁPIO </a></li>
+            <li><a href="#"> EVENTOS </a></li>
+            <li><a href="#"> CONTATO </a></li>
+        </ul>
+    </nav>
+
+    <div class="divCentral">
+      <button id="btnStart">Iniciar</button> 
+    </div>
+    <div id="tabuleiro"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script charset="utf8">
+    var app = { nrComponentes:0 };
+    app.getComponente = function(nome) {
+      if (!app[nome]) {
+        app[nome] = {};
+        app[app.nrComponentes++] = nome;
+      }
+      return app[nome];
+    };
+  </script>
+  <script src="../script.js" charset="utf8"></script>
+</body>
+</html>
