@@ -3,97 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="./img/logotipo_site.png" alt="Logo do Site" title="Logo Jogo da Memória">
-    </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="#"> INICIO </a></li>
-            <li><a href="./pages/notice.html"> NOTICIAS </a></li>
-            <li><a href="./pages/info.html"> SOBRE </a></li>
-            <li><a href="#"> LOGIN </a>
-                <ul class="sub_menu">
-                    <li><a href="#"> LOGIN </a></li>
-                    <li><a href="#"> REGISTRO </a></li>
-                </ul>
-            </li>
-            <li><a href="./pages/game.html"> JOGO </a></li>
-            <li><a href="./pages/contact.html"> CONTATO </a></li>
-            <input placeholder="Pesquisar">
-        </ul>
-    </nav>
+    <div id="container">
+        <header>
+            <h1 id="h1Invisible">Meu Jogo</h1>
+            <img src="./img/logotipo_site.png" alt="Logo do Site" title="Logo do Site">
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html" title="inicio"> INICIO </a></li>
+                <li><a href="./pages/notice.html" title="noticias"> NOTICIAS </a></li>
+                <li><a href="./pages/info.html" title="sobre"> SOBRE </a></li>
+                <li id="loginLi"><a href="#" title="login"> LOGIN </a>
+                    <ul class="sub_menu">
+                        <li><a href="./pages/login.html" title="login"> LOGIN </a></li>
+                        <li><a href="./pages/login.html" title="Iniregistroregistrocio"> REGISTRO </a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/game.html" title="jogo"> JOGO </a></li>
+                <li><a href="./pages/contact.html" title="contato"> CONTATO </a></li>
+                <input id="searchInput" placeholder="Pesquisar">
+            </ul>
+        </nav>
 
-    <div class="divCentral">
-        <a href="./pages/game.html">
-            <img id='capeGame' src="./img/game.png">
-        </a>
-    </div>
+        <main>
+            <a href="./pages/game.html" title="jogo">
+                <img id='capeGame' src="./img/game.png"  alt="Capa do jogo" title="Capa do jogo">
+            </a>
+        </main>
 
-    <div class="feature">
-        <h3>Carta 1</h3>
-        <img src="./img/android.png">
-    </div>
-    <div class="feature">
-        <h3>Carta 2</h3>
-        <img src="./img/chrome.png">
-    </div>
-    <div class="feature">
-        <h3>Carta 3</h3>
-        <img src="./img/facebook.png">
-    </div>
-
-    <section>
-        <div class="comment">
-            <h3>Usuario 1</h3>
-            <p>Absurdo de Jogo Bom</p>
+        <div class="feature">
+            <h3>Carta 1</h3>
+            <img src="./img/android.png"  alt="Imagem do Android" title="Imagem do Android">
         </div>
-        <div class="comment">
-            <h3>Usuario 2</h3>
-            <p>Brabo do Brabo</p>
+        <div class="feature">
+            <h3>Carta 2</h3>
+            <img src="./img/chrome.png"  alt="Imagem do Chrome" title="Imagem do Chrome">
         </div>
-        <div class="comment">
-            <h3>Usuario 3</h3>
-            <p>Professor TOP</p>
+        <div class="feature">
+            <h3>Carta 3</h3>
+            <img src="./img/facebook.png"  alt="Imagem do Facebook" title="Imagem do Facebook">
         </div>
-    </section>
+
+        <section>
+            <div class="comment">
+                <h3>Usuario 1</h3>
+                <p>Absurdo de Jogo Bom</p>
+            </div>
+            <div class="comment">
+                <h3>Usuario 2</h3>
+                <p>Brabo do Brabo</p>
+            </div>
+            <div class="comment">
+                <h3>Usuario 3</h3>
+                <p>Professor TOP</p>
+            </div>
+        </section>
 
 
-    <footer>
-        <h1>Redes Sociais</h1>
-        <ul>
-            <li class="socials">
-                <a class="facebook_icon" title="Facebook" href="http://www.facebook.com"></a>
-            </li>
-            <li class="socials">
-                <a class="twitter_icon" title="Twitter" href="https://twitter.com"></a>
-            </li>
-            <li class="socials">
-                <a class="linkedin_icon" title="Linkedin" href="https://www.linkedin.com"></a>
-            </li>
-            <li class="socials">
-                <a class="instagram_icon" title="Instagram" href="https://instagram.com/"></a>
-            </li>
-            <li class="socials">
-                <a class="tumbrl_icon" title="Tumblr" href="https://www.tumblr.com/"></a>
-            </li>
-            <li class="socials">
-                <a class="youtube_icon" title="YouTube" href="http://www.youtube.com/"></a>
-            </li>
-        </ul>
+        <footer>
+            <h1>Redes Sociais</h1>
+            <ul>
+                <li class="socials">
+                    <a class="facebook_icon" title="Facebook" href="http://www.facebook.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="twitter_icon" title="Twitter" href="https://twitter.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="linkedin_icon" title="Linkedin" href="https://www.linkedin.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="instagram_icon" title="Instagram" href="https://instagram.com/"></a>
+                </li>
+                <li class="socials">
+                    <a class="tumbrl_icon" title="Tumblr" href="https://www.tumblr.com/"></a>
+                </li>
+                <li class="socials">
+                    <a class="youtube_icon" title="YouTube" href="http://www.youtube.com/"></a>
+                </li>
+            </ul>
 
-        <h1>Mapa do Site</h1>
-        <ul class="map">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/info.html">Sobre</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Jogo</a></li>
-        </ul>
-    </footer>
+            <h1>Mapa do Site</h1>
+            <ul class="map">
+                <li><a href="./index.html" title="Inicio">Inicio</a></li>
+                <li><a href="./pages/notice.html" title="Notícias">Notícias</a></li>
+                <li><a href="./pages/info.html" title="Sobre">Sobre</a></li>
+                <li><a href="./pages/login.html" title="Login">Login</a></li>
+                <li><a href="./pages/login.html" title="Registro">Registro</a></li>
+                <li><a href="./pages/game.html" title="Jogo">Jogo</a></li>
+                <li><a href="./pages/contact.html" title="Contato">Contato</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.es.gov.br/scripts/extensions/html5shiv/3.7.2/html5shiv.min.js"></script>
 </body>
 
 </html>

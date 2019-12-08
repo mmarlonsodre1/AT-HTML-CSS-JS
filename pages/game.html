@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo</title>
   <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="../img/logo_game.png" alt="Logo do Site" title="Logo Jogo da Memória">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#"> HOME </a></li>
-            <li><a href="#"> LOCAL </a></li>
-            <li><a href="#"> CARDÁPIO </a></li>
-            <li><a href="#"> EVENTOS </a></li>
-            <li><a href="#"> CONTATO </a></li>
-        </ul>
-    </nav>
+    <div id="container">
+        <header>
+            <img src="../img/logotipo_site.png" alt="Logo do Site" title="Logo do Site">
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html" title="inicio"> INICIO </a></li>
+                <li><a href="../pages/notice.html" title="noticias"> NOTICIAS </a></li>
+                <li><a href="../pages/info.html" title="sobre"> SOBRE </a></li>
+                <li id="loginLi"><a href="#" title="login"> LOGIN </a>
+                    <ul class="sub_menu">
+                        <li><a href="../pages/login.html" title="login"> LOGIN </a></li>
+                        <li><a href="../pages/login.html" title="registro"> REGISTRO </a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/game.html" title="jogo"> JOGO </a></li>
+                <li><a href="../pages/contact.html" title="contato"> CONTATO </a></li>
+                <input id="searchInput" placeholder="Pesquisar">
+            </ul>
+        </nav>
 
-    <div class="divCentral">
-      <button id="btnStart">Iniciar</button> 
+        <main>
+        <button id="btnStart">Iniciar</button> 
+        </main>
+        <div id="board"></div>
+
+        <footer>
+            <h1>Redes Sociais</h1>
+            <ul>
+                <li class="socials">
+                    <a class="facebook_icon" title="Facebook" href="http://www.facebook.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="twitter_icon" title="Twitter" href="https://twitter.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="linkedin_icon" title="Linkedin" href="https://www.linkedin.com"></a>
+                </li>
+                <li class="socials">
+                    <a class="instagram_icon" title="Instagram" href="https://instagram.com/"></a>
+                </li>
+                <li class="socials">
+                    <a class="tumbrl_icon" title="Tumblr" href="https://www.tumblr.com/"></a>
+                </li>
+                <li class="socials">
+                    <a class="youtube_icon" title="YouTube" href="http://www.youtube.com/"></a>
+                </li>
+            </ul>
+
+            <h1>Mapa do Site</h1>
+            <ul class="map">
+                <li><a href="../index.html" title="Inicio">Inicio</a></li>
+                <li><a href="../pages/notice.html" title="Notícias">Notícias</a></li>
+                <li><a href="../pages/info.html" title="Sobre">Sobre</a></li>
+                <li><a href="../pages/login.html" title="Login">Login</a></li>
+                <li><a href="../pages/login.html" title="Registro">Registro</a></li>
+                <li><a href="../pages/game.html" title="Jogo">Jogo</a></li>
+                <li><a href="../pages/contact.html" title="Contato">Contato</a></li>
+            </ul>
+        </footer>
     </div>
-    <div id="tabuleiro"></div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script charset="utf8">

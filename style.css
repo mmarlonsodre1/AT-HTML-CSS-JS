@@ -7,6 +7,8 @@
 body {
     height: 100vh;
     display: block;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #fff;
 }
 
 header {
@@ -19,17 +21,34 @@ header img {
     width: 150px;
 }
 
+#h1Invisible {
+    display: none;
+}
+
+#loginLi {
+    border: red solid 1px;
+}
+
+#searchInput{
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    display: block;
+}
+
 .menu {
     background: #000;
     text-align: center;
 }
 
-.sub-menu,
+.sub_menu,
 .menu>li:hover {
     background: #444;
 }
 
-.menu li:hover>.sub-menu {
+.menu li:hover>.sub_menu {
     display: block;
 }
 
@@ -66,7 +85,7 @@ header img {
     margin: 0.1em 2em;
 }
 
-.divCentral {
+main {
     text-align: center;
     width: 100%;
     padding: 10px;
@@ -81,6 +100,12 @@ header img {
     padding-bottom: 15px;
     width: 100%;
     text-align: center;
+    display: flex;
+    display: block;
+}
+
+h3 {    
+    color: #000;
 }
 
 .feature h3 {
@@ -93,9 +118,17 @@ header img {
 
 .feature img:hover {
     transform: rotate(180deg);
+    -webkit-transition-property: width height background-color font-size left top -webkit-transform color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: width height background-color font-size left top transform color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .comment {
+    display: flex;
+    display: block;
     background-image: linear-gradient(#444, #555);
     font-size: 2em;
     text-align: center;
@@ -105,13 +138,16 @@ header img {
 
 .contact {
     margin: 10px;
+    padding: 0px;
+    border: 0px;
+    align-items: center;
 }
 
 #divBtnStart #btnStart {
     width: 630px;
 }
 
-#tabuleiro {
+#board {
     width: 640px;
     height: 640px;
     margin: auto;
@@ -119,7 +155,7 @@ header img {
     flex-wrap: wrap;
 }
 
-.memory-card {
+.cardGame {
     width: calc(25% - 10px);
     margin: 5px;
     transform-style: preserve-3d;
@@ -127,25 +163,25 @@ header img {
     position: relative;
 }
 
-.memory-card:active {
-    transform: scale(0.97);
-}
-
-.memory-card.flip {
+.cardGame.flip {
     transform: rotateY(180deg);
 }
 
-.front-face,
-.back-face {
+.cardGame:active {
+    transform: scale(0.97);
+}
+
+.up {
+    transform: rotateY(180deg);
+}
+
+.up,
+.down {
     width: 100%;
     height: 100%;
     padding: 5px;
     position: absolute;
     background: #cacaca;
-}
-
-.front-face {
-    transform: rotateY(180deg);
 }
 
 footer {
@@ -190,6 +226,23 @@ footer .socials a.youtube_icon {
 
 h1 {
     margin-top: 10px;
+    color: #000;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 @media (max-widht: 549px) {
@@ -198,3 +251,5 @@ h1 {
         height: 100%;
     }
 }
+
+@import url("reset.css")
