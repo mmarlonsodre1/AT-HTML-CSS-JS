@@ -29,7 +29,7 @@ header img {
     border: red solid 1px;
 }
 
-#searchInput{
+#searchInput {
     border-radius: 5px;
 }
 
@@ -104,7 +104,7 @@ main {
     display: block;
 }
 
-h3 {    
+h3 {
     color: #000;
 }
 
@@ -141,6 +141,14 @@ h3 {
     padding: 0px;
     border: 0px;
     align-items: center;
+}
+
+#loginButtons div {
+    display: none;
+}
+
+#loginButtons div:target {
+    display: block;
 }
 
 #divBtnStart #btnStart {
@@ -235,7 +243,8 @@ table {
     width: 100%;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -246,6 +255,13 @@ tr:nth-child(even) {
 }
 
 @media (max-widht: 549px) {
+    section iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-widht: 860px) {
     section iframe {
         width: 100%;
         height: 100%;
