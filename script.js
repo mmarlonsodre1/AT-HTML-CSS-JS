@@ -22,6 +22,7 @@
             alert(`Melhor Tempo: ${myStorage.getItem("timeGame")} segundos`);
         else alert(`Melhor Tempo: 00 segundos`);
     }
+
     btnClock.addEventListener("click", timeGame);
 
     imagens.forEach((img) => {
@@ -51,8 +52,6 @@
         });
     }
 
-    function fadeSlide() {}
-
     btnStart.addEventListener("click", startGame);
 
     function startGame() {
@@ -62,7 +61,6 @@
         sortCards();
         board.innerHTML = cardHTML;
         game();
-        fadeSlide();
     }
 
     function game() {
