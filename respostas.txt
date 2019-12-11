@@ -15,3 +15,9 @@ R: Para criar animações, é necessário utilizar a tecnologia CSS3 ou JavaScri
 
 Respondeu de forma correta a pergunta referente a aparência de multimídia com CSS3 e apresentou um exemplo?
 R: Pode-se decorar o redor da midia através do CSS3. Um exemplo é deixar um video com a bordar arredondada. Ex: border-­radius : 8px ;
+
+
+
+Sobre o W3C Validator:
+    Import e Media-Querynão são aceitos.
+    A tela de Jogo (game.html) está com erros por conta do código modelo do AT de JS. Não posso alterar esse código
